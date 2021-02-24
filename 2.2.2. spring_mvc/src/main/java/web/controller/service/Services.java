@@ -1,4 +1,4 @@
-package Service;
+package web.controller.service;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-public class Services implements Service {
+public class Services {
     private List<Car> cars = new ArrayList<>();
 
 
