@@ -1,19 +1,21 @@
-package web.controller;
+package web.services;
 
-import org.springframework.stereotype.Controller;
+
+import org.springframework.stereotype.Component;
+
 import org.springframework.web.bind.annotation.RequestParam;
-import web.controller.Car;
+import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Controller
-public class Services {
-    private List<Car> cars = new ArrayList<>();
+@Component
+public class CarServices {
 
+    private final List<Car> cars = new ArrayList<>();
 
-    public Services() {
+    public CarServices() {
         cars.add(new Car("Mazda", "X6", "business"));
         cars.add(new Car("Nisan", "Tiguan", "standart"));
         cars.add(new Car("Subaru", "Impreza", "sport"));

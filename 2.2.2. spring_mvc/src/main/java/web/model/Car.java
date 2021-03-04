@@ -1,9 +1,15 @@
-package web.controller;
+package web.model;
+
 
 public class Car {
-        private String model;
-        private String series;
-        private String klass;
+    private String model;
+    private String series;
+    private String klass;
+
+    public Car() {
+
+    }
+
 
     public Car(String model, String series, String klass) {
         this.model = model;
@@ -40,6 +46,6 @@ public class Car {
         return "Car: " +
                 "model - '" + model + '\'' +
                 ", series - '" + series + '\'' +
-                ", klass - '" + klass + '\''+".";
+                ", klass - '" + klass + '\'' + ".";
     }
 }
